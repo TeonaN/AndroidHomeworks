@@ -8,9 +8,6 @@ data class Items(
     val description: String,
     @DrawableRes
     val image: Int
-    //val isImportant: Boolean
 ) {
-//    fun getInfo() : String {
-//        return "$title - $description"
-//    }
+
 }
