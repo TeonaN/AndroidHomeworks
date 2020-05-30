@@ -25,8 +25,13 @@ class ItemsAdapter( private var items: MutableList<String>) :
 
         holder.itemView.textView1.text = p
 
-
     }
+
+    fun addItem(item: String) {
+        items.add(0, item)
+        notifyDataSetChanged()
+    }
+
 
 }
 

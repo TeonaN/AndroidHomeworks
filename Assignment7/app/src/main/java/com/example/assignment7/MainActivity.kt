@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
             if (!TextUtils.isEmpty(input)) {
                 items.add(inputText.text.toString())
+                adapter.addItem(input)
                 adapter.notifyDataSetChanged()
 
                 inputText.setText("")
